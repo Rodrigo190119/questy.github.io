@@ -64,7 +64,7 @@ exit_btn.onclick = ()=>{
 // if continueQuiz_1 (math) button clicked
 continue_btn_1.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
-    show(72);
+    setTimeout( function () { show(71); }, 6200 );
     show(100);
     show(50);
 }
@@ -72,7 +72,7 @@ continue_btn_1.onclick = ()=>{
 // if continueQuiz_2 (geo) button clicked
 continue_btn_2.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
-    show(72);
+    setTimeout( function () { show(72); }, 6200 );
     show(100);
     show(50);
 }
@@ -80,7 +80,7 @@ continue_btn_2.onclick = ()=>{
 // if continueQuiz_3 (lit) button clicked
 continue_btn_3.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
-    show(73);
+    setTimeout( function () { show(73); }, 6200 );
     show(100);
     show(50);
 }
