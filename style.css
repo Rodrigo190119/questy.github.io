@@ -35,6 +35,17 @@ body {
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.ok_1,
+.ok_2,
+.ok_3{
+    position: absolute;
+    top: 92%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .course_1_btn{
     position: absolute;
     top: 35%;
@@ -72,6 +83,20 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.ok_1 button,
+.ok_2 button,
+.ok_3 button{
+    font-size: 20px;
+    font-weight: 700;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
 .start_btn button,
 .course_1_btn button,
 .course_2_btn button,
@@ -87,6 +112,9 @@ body {
     cursor: pointer;
 }
 
+.ok_1 button:hover,
+.ok_2 button:hover,
+.ok_3 button:hover,
 .start_btn button:hover,
 .course_1_btn button:hover,
 .course_2_btn button:hover,
@@ -427,4 +455,159 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.marker {
+    position: absolute;
+    width: 60px;
+    left: 46%;
+    top: 30px;
+    z-index: 2;
+}
+
+.wheel_box{
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    content: '';
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 30%;
+    top: 80px;
+}
+
+.wheel_box:after{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    right: -30px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 5s;
+}
+
+.span1{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    background-color: #DF816D;
+    right: 0;
+}
+
+.span2{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #3f51b5;
+    left: 0;
+}
+
+/*Little bit adjust the value*/
+.box1 .span1 b{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.box1 .span2 b{
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+
+.box2{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-180deg);
+}
+span b{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 26px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 3px 3px 0 #717171;
+}
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #ff5722;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.spin:hover{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.spin:active{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.wheel_box.animate:after{
+    animation: animateArrow 0.7s ease infinite;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(1.5px);
+    }
+    80% {
+        filter: blur(1.5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 }

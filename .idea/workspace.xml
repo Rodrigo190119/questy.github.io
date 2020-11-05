@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eceada3a-0d9f-4e65-9a7f-b75d9787b3b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +41,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spinning-wheel.html" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Emprendimiento-Grupo-5.github.io/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testwar-web-app.github.io/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/script.js" working-dir="$PROJECT_DIR$/js">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.script.js" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
@@ -66,6 +73,7 @@
       <workItem from="1604469347287" duration="1253000" />
       <workItem from="1604470845601" duration="347000" />
       <workItem from="1604509096112" duration="48000" />
+      <workItem from="1604539867163" duration="12597000" />
     </task>
     <servers />
   </component>
@@ -85,10 +93,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604469484966">
+    <state x="254" y="105" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604540154999">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="254" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604469484966" />
+    <state x="254" y="105" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604540154999" />
+    <state x="580" y="205" key="FileChooserDialogImpl" timestamp="1604544393395">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="580" y="205" key="FileChooserDialogImpl/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604544393395" />
     <state width="1579" height="235" key="GridCell.Tab.0.bottom" timestamp="1604470601797">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -109,5 +121,13 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="392" y="183" key="Vcs.Push.Dialog.v2/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604470554628" />
+    <state x="-1273" y="0" width="1191" height="855" key="dock-window-1" timestamp="1604541749852">
+      <screen x="-1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="-1273" y="0" width="1191" height="855" key="dock-window-1/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604541749852" />
+    <state x="-1266" y="13" width="1192" height="792" maximized="true" key="dock-window-2" timestamp="1604545717066">
+      <screen x="-1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="-1266" y="13" width="1192" height="792" maximized="true" key="dock-window-2/-1366.0.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1604545717066" />
   </component>
 </project>

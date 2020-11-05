@@ -11,9 +11,12 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const course_1_btn = document.querySelector(".course_1_btn button")
-const course_2_btn = document.querySelector(".course_2_btn button")
-const course_3_btn = document.querySelector(".course_3_btn button")
+const course_1_btn = document.querySelector(".course_1_btn button");
+const course_2_btn = document.querySelector(".course_2_btn button");
+const course_3_btn = document.querySelector(".course_3_btn button");
+const ok_1_btn = document.querySelector(".ok_1 button");
+const ok_2_btn = document.querySelector(".ok_2 button");
+const ok_3_btn = document.querySelector(".ok_3 button");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -61,6 +64,33 @@ exit_btn.onclick = ()=>{
 // if continueQuiz_1 (math) button clicked
 continue_btn_1.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
+    show(72);
+    show(100);
+    show(50);
+}
+
+// if continueQuiz_2 (geo) button clicked
+continue_btn_2.onclick = ()=>{
+    info_box.classList.remove("activeInfo"); //hide info box
+    show(72);
+    show(100);
+    show(50);
+}
+
+// if continueQuiz_3 (lit) button clicked
+continue_btn_3.onclick = ()=>{
+    info_box.classList.remove("activeInfo"); //hide info box
+    show(73);
+    show(100);
+    show(50);
+}
+
+//if ok_1 go to math quiz
+ok_1_btn.onclick = ()=>{
+    hide(71);
+    hide(100);
+    hide(50);
+    info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
     show(8);
     showMathQuestions(0); //calling showMathQuestions function
@@ -69,23 +99,29 @@ continue_btn_1.onclick = ()=>{
     startTimerLine(0); //calling startTimerLine function
 }
 
-// if continueQuiz_2 (geo) button clicked
-continue_btn_2.onclick = ()=>{
+//if ok_1 go to geo quiz
+ok_2_btn.onclick = ()=>{
+    hide(72);
+    hide(100);
+    hide(50);
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
     show(9);
-    showGeoQuestions(0); //calling showMathQuestions function
+    showGeoQuestions(0); //calling showGeoQuestions function
     queCounter_2(1); //passing 1 parameter to queCounter
     startTimer_2(20); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-// if continueQuiz_3 (lit) button clicked
-continue_btn_3.onclick = ()=>{
-    show(10);
+//if ok_1 go to lit quiz
+ok_3_btn.onclick = ()=>{
+    hide(73);
+    hide(100);
+    hide(50);
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
-    showLitQuestions(0); //calling showMathQuestions function
+    show(10);
+    showLitQuestions(0); //calling showLitQuestions function
     queCounter_3(1); //passing 1 parameter to queCounter
     startTimer_3(20); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
@@ -590,4 +626,20 @@ function hide(id){
 
 function show(id) {
     document.getElementById(id).style.display = "";
+}
+
+function spin(){
+
+    var x = 1024; //min value
+    var y = 9999; // max value
+
+    var deg = Math.floor(Math.random() * (x - y)) + y;
+
+    document.getElementById('box').style.transform = "rotate("+deg+"deg)";
+
+    var element = document.getElementById(50);
+    element.classList.remove('animate');
+    setTimeout(function(){
+        element.classList.add('animate');
+    }, 5000); //5000 = 5 second
 }
