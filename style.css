@@ -39,8 +39,8 @@ body {
 .ok_2,
 .ok_3{
     position: absolute;
-    top: 92%;
-    left: 48%;
+    top: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -490,7 +490,7 @@ footer button.show{
     position: relative;
     width: 500px;
     height: 500px;
-    left: 30%;
+    left: 35%;
     top: 80px;
 }
 
@@ -540,7 +540,7 @@ footer button.show{
 
 /*Little bit adjust the value*/
 .box1 .span1 b{
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) ;
 }
 
 .box1 .span2 b{
