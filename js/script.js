@@ -57,8 +57,7 @@ course_3_btn.onclick = ()=>{
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
-    show(1);
+    window.location.reload();
 }
 
 // if continueQuiz_1 (math) button clicked

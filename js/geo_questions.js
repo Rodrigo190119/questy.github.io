@@ -2,7 +2,7 @@
 let geo_questions = [
     {
     numb: 1,
-    question: "¿A cuántos m.s.n.m se encuentra Machu Picchu",
+    question: "¿A cuántos m.s.n.m se encuentra Machu Picchu?",
     answer: "2,430 m",
     options: [
       "3,399 m",

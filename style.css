@@ -1,6 +1,7 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
+    outline: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +9,7 @@
 }
 
 body {
+    overflow: hidden;
     background: #007bff;
 }
 
@@ -39,7 +41,7 @@ body {
 .ok_2,
 .ok_3{
     position: absolute;
-    top: 80%;
+    bottom: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -475,23 +477,17 @@ footer button.show{
 .marker {
     position: absolute;
     width: 60px;
-    left: 46%;
-    top: 30px;
+    top: 2%;
+    left: 48%;
     z-index: 2;
 }
 
 .wheel_box{
-    font-family: Open Sans;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
     content: '';
     position: relative;
     width: 500px;
     height: 500px;
-    left: 35%;
-    top: 80px;
+    margin: auto;
 }
 
 .wheel_box:after{
@@ -499,61 +495,63 @@ footer button.show{
     content: '';
     width: 32px;
     height: 32px;
-    right: -30px;
-    left: 50%;
-    top: 50%;
+    background-size: 32px;
     transform: translateY(-50%);
 }
 
 .box{
     width: 100%;
     height: 100%;
-    left: 50%;
-    top: 50%;
+    position: relative;
     border-radius: 50%;
     border: 10px solid #fff;
     overflow: hidden;
     transition: all ease 5s;
+
+    margin: auto;
+    top: 6%;
 }
+
+
 
 .span1{
     width: 50%;
     height: 50%;
-    position: absolute;
     display: inline-block;
-    overflow: hidden;
+    position: absolute;
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    background-color: #DF816D;
+    background-color: #FFC914;
     right: 0;
 }
 
 .span2{
     width: 50%;
     height: 50%;
-    position: absolute;
     display: inline-block;
-    overflow: hidden;
+    position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    background-color: #3f51b5;
+    background-color: #17BEBB;
     left: 0;
 }
 
 /*Little bit adjust the value*/
 .box1 .span1 b{
+    overflow: hidden;
     transform: translate(-50%, -50%) ;
 }
 
 .box1 .span2 b{
+    overflow: hidden;
     transform: translate(-50%, -50%) rotate(-180deg);
 }
-
 
 .box2{
     width: 100%;
     height: 100%;
     transform: rotate(-180deg);
 }
-span b{
+
+span b {
     width: 65px;
     height: 65px;
     line-height: 65px;
@@ -563,21 +561,21 @@ span b{
     background-color: #fff;
     position: absolute;
     top: 50%;
-    overflow: hidden;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0 3px 3px 0 #717171;
 }
+
 .spin{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75px;
     height: 75px;
     border-radius: 50%;
     border: 4px solid #fff;
-    background-color: #ff5722;
+    background-color: #F72585;
     color: #fff;
     box-shadow: 0 5px 20px #000;
     font-weight: bold;
