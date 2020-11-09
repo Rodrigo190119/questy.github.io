@@ -218,7 +218,7 @@ next_btn_1.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer_1(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
+        timeText.textContent = "Tiempo restante"; //change the timeText to Time Left
         next_btn_1.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
@@ -239,7 +239,7 @@ next_btn_2.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer_2(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
+        timeText.textContent = "Tiempo restante"; //change the timeText to Time Left
         next_btn_2.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
@@ -260,7 +260,7 @@ next_btn_3.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer_3(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
+        timeText.textContent = "Tiempo restante"; //change the timeText to Time Left
         next_btn_3.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
