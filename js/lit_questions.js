@@ -2,7 +2,7 @@
 let lit_questions = [
     {
     numb: 1,
-    question: "¿Qué obra no pertenece al escritor Julio Ramón Ribeyro",
+    question: "¿Qué obra no pertenece al escritor Julio Ramón Ribeyro?",
     answer: "En octubre no hay milagros",
     options: [
       "Crónica de San Gabriel",
